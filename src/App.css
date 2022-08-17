@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.my-cont {
+  padding: 0 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-right {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlink {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+  font-weight: 400;
+  font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
+.banner {
+  background-image: url("./image/asif2.png");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  margin-top: -120px;
+}
+.project-banner {
+  background-image: url(./image/laptop-work.jpg);
+  background-size: cover;
+  background-position: 0;
+  margin-top: -120px;
+}
+
+.banner-overlay {
   min-height: 100vh;
+  background-color: rgba(230, 230, 250, 0.322);
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.project-overlay {
+  min-height: 80vh;
+  background-color: rgba(230, 230, 250, 0.322);
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text {
+  padding-left: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner-text h1 {
+  font-size: 50px;
+}
+.banner-text h5 {
+  word-spacing: 15px;
+}
+
+.color {
+  color: red;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 15px;
+  margin-top: 50px;
+}
+
+.project-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid gray;
+  background-color: aliceblue;
+}
+
+.project-text {
+  padding: 30px;
+}
+
+.project-text button {
+  background-color: lemonchiffon;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+@media (max-width: 500px) {
+  .my-cont {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .banner-overlay {
+    background-color: rgba(230, 230, 250, 0.52);
+    align-items: center;
+  }
+  .banner-text {
+    padding: 30px;
   }
 }
